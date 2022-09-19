@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+    display: block;
+}
+
+p {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    position: absolute;
+    font-family: 'Quicksand', sans-serif;
+    top: 10%;
+    left: 20%;
+}
+
+.sidebar {
+    background-color: #d9d9d9;
+    height: 100vh;
+    width: 240px;
+    display: block;
+}
+
+.header-sidebar {
+    background-color: #a4a3a3;
+    height: 30px;
+    padding-left: 45px;
+    padding-top: 10px;
+    background-image: url(img/logo\ tb.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
+.list-sidebar {
+    margin: 50px 50px 50px 40px;
+}
+
+.list-sidebar p:first-child {
+    padding-bottom: 30px;
+}
+
+.list-sidebar1 {
+    margin-left: 40px;
+    margin-top: -20px;
+}
+
+td {
+    height: 50px;
+    width: 200px;
+}
+
+input {
+    width: 500px;
+}
+
+table {
+    font-family: 'Quicksand', sans-serif;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+input {
+    font-family: 'Quicksand', sans-serif;
+}
+
+.submit {
+    position: absolute;
+    width: 50px;
+    left: 55%;
+    bottom: 30%;
+}
+
+.footer {
+    bottom: 0.1px;
+    position: absolute;
+    background-color: #327382;
+    height: 150px;
+    width: 1040px;
+    margin-left: 240px;
+    background-image: url(img/logo\ tb.png);
+    background-repeat: no-repeat;
+    background-size: 180px;
+}
+
+.footer h2 {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
