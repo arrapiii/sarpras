@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Quicksand', sans-serif;
 }
 
 a {
@@ -9,12 +10,14 @@ a {
 }
 
 .sidebar {
+    font-family: 'Quicksand', sans-serif;
     background-color: #d9d9d9;
     height: 100vh;
     width: 240px;
 }
 
 .header-sidebar {
+    font-size: 14px;
     background-color: #a4a3a3;
     height: 30px;
     padding-left: 45px;
@@ -27,6 +30,7 @@ a {
 
 .list-sidebar {
     margin: 50px 50px 50px 40px;
+    text-decoration: none;
 }
 
 .list-sidebar1 {
@@ -45,6 +49,22 @@ table {
     left: 30%;
     float: right;
     width: 50vw;
+    border-spacing: 0;
+}
+
+table th {
+    background-color: #a4a3a3;
+    border: black solid 1px;
+    width: 5vw;
+}
+
+table td {
+    background-color: #ece9e9;
+    border: black solid 1px;
+}
+
+.table th:nth-child(5) {
+    width: 40px;
 }
 
 .btn {
@@ -53,7 +73,7 @@ table {
     position: absolute;
     left: 50%;
     bottom: 30%;
-    width: 10vw;
+    width: 9vw;
     border-radius: 20px;
     background-color: #a4a3a3;
 }
@@ -80,4 +100,25 @@ table {
     justify-content: center;
     text-align: center;
     padding-top: 20px;
+}
+
+button:first-child {
+    background-color: greenyellow;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 4vw;
+    text-decoration: none;
+}
+
+button:nth-child(2) {
+    background-color: red;
+    border: 1px solid;
+    border-radius: 5px;
+    width: 4vw;
+    float: right;
+    margin-left: -40px;
+}
+
+a {
+    text-decoration: none;
 }

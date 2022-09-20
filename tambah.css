@@ -18,7 +18,7 @@ h3 {
     position: absolute;
     font-family: 'Quicksand', sans-serif;
     top: 10%;
-    left: 20%;
+    left: 30%;
 }
 
 .sidebar {
@@ -52,13 +52,9 @@ h3 {
     margin-top: -20px;
 }
 
-td {
+table td {
     height: 50px;
     width: 200px;
-}
-
-input {
-    width: 500px;
 }
 
 table {
@@ -69,14 +65,19 @@ table {
 }
 
 input {
+    border-radius: 5px;
     font-family: 'Quicksand', sans-serif;
+    width: 20vw;
 }
 
 .submit {
     position: absolute;
-    width: 50px;
+    width: 70px;
     left: 55%;
     bottom: 30%;
+    border: none;
+    background-color: #a4a3a3;
+    border-radius: 10px;
 }
 
 .footer {
@@ -97,4 +98,18 @@ input {
     justify-content: center;
     text-align: center;
     padding-top: 20px;
+}
+
+.card {
+    color: white;
+    margin-top: -100px;
+    margin-left: 350px;
+    background-color: #327382;
+    border-radius: 10px;
+    width: 550px;
+    height: 320px;
+}
+
+a {
+    text-decoration: none;
 }

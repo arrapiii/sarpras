@@ -1,14 +1,13 @@
 <?php
     include 'koneksi.php';
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Data Siswa</title>
+    <title>Data Barang</title>
     <!-- css -->
     <link rel="stylesheet" href="dataa.css">
     <!-- font quicksand -->
@@ -27,34 +26,34 @@
             <a href="tampildatabarang.php">Data Barang Sarpras</a>
         </div>
     </div>
-    <table>
+    <table border="1px">
         <tr>
-            <th>NISN</th>
-            <th>Nama</th>
-            <th>Jenis Kelamin</th>
-            <th>Kelas</th>
+            <th>Kode Barang</th>
+            <th>Nama Barang</th>
+            <th>Satuan Barang</th>
+            <th>Jumlah Barang</th>
             <th>Action</th>
         </tr>
         <?php
-            $sql = "SELECT * FROM siswa";
+            $sql = "SELECT * FROM barang";
             $query = mysqli_query($connect, $sql);
-            while($sis = mysqli_fetch_array($query)) {
+            while($bar = mysqli_fetch_array($query)) {
                 echo "
                 <tr>
-                <td>$sis[0]</td>
-                <td>$sis[1]</td>
-                <td>$sis[2]</td>
-                <td>$sis[3]</td>
+                <td>$bar[0]</td>
+                <td>$bar[1]</td>
+                <td>$bar[2]</td>
+                <td>$bar[3]</td>
                 <td>
-                    <button> <a href='formeditsiswa.php?nisn=".$sis['nisn']."'>Edit</a> </button>
-                    <button> <a href='hapus.php?nisn=".$sis['nisn']."'>Hapus</a> </button>
+                    <button> <a href='formeditbarang.php?kode_barang=".$bar['kode_barang']."'>Edit</a> </button>
+                    <button> <a href='hapusbarang.php?kode_barang=".$bar['kode_barang']."'>Hapus</a> </button>
                 </td>
                 </tr>";
             }
         ?>
     </table>
     <div class="btn">
-        <a href="siswa.html">Tambah Data</a>
+        <a href="barang.html">Tambah Data</a>
     </div>
     <!-- footer -->
     <div class="footer">

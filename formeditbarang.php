@@ -1,10 +1,10 @@
 <?php
     include 'koneksi.php';
 
-    $nisn = $_GET['nisn'];
-    $sql = "SELECT * FROM siswa WHERE nisn='$nisn'";
+    $kodebar = $_GET['kode_barang'];
+    $sql = "SELECT * FROM barang WHERE kode_barang='$kodebar'";
     $query = mysqli_query($connect, $sql);
-    $sis = mysqli_fetch_assoc($query);
+    $bar = mysqli_fetch_assoc($query);
 
     if(mysqli_num_rows($query) < 1) {
         die ("Data tidak ditemukan");
@@ -17,7 +17,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Data Siswa</title>
+    <title>Edit Data Barang</title>
     <!-- css -->
     <link rel="stylesheet" href="tambah.css">
     <!-- font quicksand -->
@@ -35,25 +35,26 @@
         <div class="list-sidebar1">
             <a href="tampildatabarang.php">Data Barang Sarpras</a>
         </div>
+
     <div class="card">
-        <form action="ubah.php" method="post">
-            <h3><b>TAMBAH DATA SISWA</b></h3>
+        <form action="ubahbarang.php" method="post">
+            <h3><b>TAMBAH DATA BARANG</b></h3>
             <table class="table">
                 <tr>
-                    <td>NISN</td>
-                    <td><input value="<?php echo $sis['nisn']?>" type="number" required="required" name="nisn"></td>
+                    <td>Kode Barang</td>
+                    <td><input value="<?php echo $bar['kode_barang']?>" type="number" required="required" name="kode_barang"></td>
                 </tr>
                 <tr>
-                    <td>Nama</td>
-                    <td><input value="<?php echo $sis['nama']?>" type="text" required="required" name="nama"></td>
+                    <td>Nama Barang</td>
+                    <td><input value="<?php echo $bar['nama_barang']?>" type="text" required="required" name="nama_barang"></td>
                 </tr>
                 <tr>
-                    <td>Jenis Kelamin</td>
-                    <td><input value="<?php echo $sis['jenis_kelamin']?>" type="text" required="required" name="jenis_kelamin"></td>
+                    <td>Satuan Barang</td>
+                    <td><input value="<?php echo $bar['satuan_barang']?>" type="text" required="required" name="satuan_barang"></td>
                 </tr>
                 <tr>
-                    <td>Kelas</td>
-                    <td><input value="<?php echo $sis['kelas']?>" type="text" required="required" name="kelas"></td>
+                    <td>Jumlah Barang</td>
+                    <td><input value="<?php echo $bar['jumlah_barang']?>" type="text" required="required" name="jumlah_barang"></td>
                 </tr>
             </table>
             <input type="submit" name="ubah" value="ubah" class="submit">
