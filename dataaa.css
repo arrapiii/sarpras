@@ -29,13 +29,24 @@ a {
 }
 
 .list-sidebar {
-    margin: 50px 50px 50px 40px;
-    text-decoration: none;
+    margin: 48px 50px 50px 40px;
+    transition: all .5s ease;
+}
+
+.list-sidebar:hover {
+    margin-left: 80px;
+    
 }
 
 .list-sidebar1 {
     margin-left: 40px;
-    margin-top: -20px;
+    margin-top: -22px;
+    transition: all .5s ease;
+}
+
+.list-sidebar1:hover {
+    margin-left: 80px;
+    
 }
 
 .list-sidebar p:first-child {
@@ -46,21 +57,23 @@ table {
     font-family: 'Quicksand', sans-serif;
     position: absolute;
     top: 20%;
-    left: 30%;
+    left: 27%;
     float: right;
-    width: 50vw;
+    width: 65vw;
     border-spacing: 0;
+    box-shadow: 0 0 10px;
 }
 
 table th {
     background-color: #a4a3a3;
-    border: black solid 1px;
     width: 5vw;
+    padding: 10px 10px;
 }
 
 table td {
-    background-color: #ece9e9;
-    border: black solid 1px;
+    background-color: #ece9e9;  
+    text-align: center;
+    padding: 5px 15px;
 }
 
 .table th:nth-child(5) {
@@ -71,7 +84,7 @@ table td {
     padding-left: 25px;
     font-family: 'Quicksand', sans-serif;
     position: absolute;
-    left: 50%;
+    left: 54%;
     bottom: 30%;
     width: 9vw;
     border-radius: 20px;
@@ -103,11 +116,20 @@ table td {
 }
 
 button:first-child {
+    color: black;
     background-color: greenyellow;
     border: 1px solid;
     border-radius: 5px;
     width: 4vw;
+    float: left;
     text-decoration: none;
+    transition: all .3s ease;
+}
+
+button:first-child:hover {
+    background-color: white;
+    margin-top: -3px;
+    box-shadow: 0 0 5px;
 }
 
 button:nth-child(2) {
@@ -117,6 +139,14 @@ button:nth-child(2) {
     width: 4vw;
     float: right;
     margin-left: -40px;
+    transition: all .3s ease;
+}
+
+button:nth-child(2):hover {
+    background-color: white;
+    margin-top: -3px;
+    box-shadow: 0 0 5px;
+    
 }
 
 a {

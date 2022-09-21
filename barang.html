@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tambah Data Barang</title>
     <!-- css -->
-    <link rel="stylesheet" href="tambah.css">
+    <link rel="stylesheet" href="insert.css">
     <!-- font quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -22,29 +22,30 @@
         <div class="list-sidebar1">
             <a href="tampildatabarang.php">Data Barang Sarpras</a>
         </div>
-
-    <form action="tambahbarang.php" method="post">
-        <h3><b>TAMBAH DATA BARANG</b></h3>
-        <table border="1">
-            <tr>
-                <td>Kode Barang</td>
-                <td><input type="number" required="required" name="kode_barang"></td>
-            </tr>
-            <tr>
-                <td>Nama Barang</td>
-                <td><input type="text" required="required" name="nama_barang"></td>
-            </tr>
-            <tr>
-                <td>Satuan Barang</td>
-                <td><input type="text" required="required" name="satuan_barang"></td>
-            </tr>
-            <tr>
-                <td>Jumlah Barang</td>
-                <td><input type="text" required="required" name="jumlah_barang"></td>
-            </tr>
-        </table>
-        <input type="submit" name="tambah" value="tambah" class="submit">
-    </form>
+        <div class="card">
+            <form action="tambahbarang.php" method="post">
+                <h3><b>TAMBAH DATA BARANG</b></h3>
+                <table>
+                    <tr>
+                        <td>Kode Barang</td>
+                        <td><input type="number" required="required" name="kode_barang"></td>
+                    </tr>
+                    <tr>
+                        <td>Nama Barang</td>
+                        <td><input type="text" required="required" name="nama_barang"></td>
+                    </tr>
+                    <tr>
+                        <td>Satuan Barang</td>
+                        <td><input type="text" required="required" name="satuan_barang"></td>
+                    </tr>
+                    <tr>
+                        <td>Jumlah Barang</td>
+                        <td><input type="text" required="required" name="jumlah_barang"></td>
+                    </tr>
+                </table>
+                <input type="submit" name="tambah" value="tambah" class="submit">
+            </form>
+        </div>
      <!-- footer -->
      <div class="footer">
         <h2>JIKA SUDAH MEMINJAM BARANG DIHARAPKAN <br>DIJAGA DENGAN BAIK DIKEMBALIKAN DENGAN <br>KONDISI YANG AMAN SEPERTI SEMULANYA. <br>SEKIAN TERIMA KASIH</h2>

@@ -6,7 +6,7 @@
 a {
     font-family: 'Quicksand', sans-serif;
     font-size: 14px;
-    display: block;
+    /* display: block; */
 }
 
 p {
@@ -31,6 +31,7 @@ h3 {
 .header-sidebar {
     background-color: #a4a3a3;
     height: 30px;
+    font-weight: bold;
     padding-left: 45px;
     padding-top: 10px;
     background-image: url(img/logo\ tb.png);
@@ -41,6 +42,11 @@ h3 {
 
 .list-sidebar {
     margin: 50px 50px 50px 40px;
+    transition: all .5s ease;
+}
+
+.list-sidebar:hover {
+    margin-left: 80px;
 }
 
 .list-sidebar p:first-child {
@@ -50,6 +56,11 @@ h3 {
 .list-sidebar1 {
     margin-left: 40px;
     margin-top: -20px;
+    transition: all .5s ease;
+}
+
+.list-sidebar1:hover {
+    margin-left: 80px;
 }
 
 table td {
@@ -58,6 +69,7 @@ table td {
 }
 
 table {
+    margin: 0;
     font-family: 'Quicksand', sans-serif;
     position: absolute;
     top: 20%;
@@ -67,17 +79,27 @@ table {
 input {
     border-radius: 5px;
     font-family: 'Quicksand', sans-serif;
-    width: 20vw;
+    width: 40vw;
 }
 
 .submit {
-    position: absolute;
+    position: relative;
+    height: 30px;
     width: 70px;
     left: 55%;
-    bottom: 30%;
+    top: 275px;
     border: none;
-    background-color: #a4a3a3;
-    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    background-color: #4A92CE;
+    border-radius: 10px;  
+    transition: all .3s ease;
+    box-shadow: 0 0 5px black;
+    margin-bottom: -3px;  
+}
+
+.submit:hover {
+    box-shadow: none;
 }
 
 .footer {
@@ -106,7 +128,7 @@ input {
     margin-left: 350px;
     background-color: #327382;
     border-radius: 10px;
-    width: 550px;
+    width: 800px;
     height: 320px;
 }
 

@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Data Siswa</title>
     <!-- css -->
-    <link rel="stylesheet" href="dataa.css">
+    <link rel="stylesheet" href="dataaa.css">
     <!-- font quicksand -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@300;400&family=Roboto+Mono&family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
@@ -33,7 +33,7 @@
             <th>Nama</th>
             <th>Jenis Kelamin</th>
             <th>Kelas</th>
-            <th>Action</th>
+            <th class="action">Action</th>
         </tr>
         <?php
             $sql = "SELECT * FROM siswa";
